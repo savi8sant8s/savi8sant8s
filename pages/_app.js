@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+function Savi8Snt8s({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default Savi8Snt8s
