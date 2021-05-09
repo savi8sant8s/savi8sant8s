@@ -100,7 +100,7 @@ class PersonalProjects extends Component {
           <Card bg="secondary" border="warning">
             <Card.Header>
               <Accordion.Toggle style={{ color: 'yellow' }} as={Button} variant="link" eventKey="0">
-                <Image width="50px" src="https://www.flaticon.com/svg/vstatic/svg/919/919850.svg?token=exp=1620591120~hmac=f1b949c7a03aad066b08866a6902e3c9" roundedCircle />
+                <Image width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOR_Bj9HeZKu8YF5Fq-mmB4fknyZ_XhgfSgHcuVxIeuRn5LPe_s69Arsb-VEIs3lHMHc&usqp=CAU" roundedCircle />
                 Gerador de competições de futebol
               </Accordion.Toggle>
             </Card.Header>
