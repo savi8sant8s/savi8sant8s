@@ -1,7 +1,6 @@
 import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Savi8Snt8s({ Component, pageProps }) {
+export default function Savi8Snt8s({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default Savi8Snt8s
