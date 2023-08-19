@@ -1,6 +1,6 @@
 const wallpaper = [
     'wallpaper.jpg',
-    'wallpaper-2.jpeg',
+    'wallpaper-2.jpg',
 ];
 let currentWallpaperIndex = 0;
 
