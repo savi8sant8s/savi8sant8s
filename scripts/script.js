@@ -1,73 +1,63 @@
 const wallpaper = [
-    'wallpaper.jpg',
-    'wallpaper-2.jpg',
+    '/images/wallpaper.jpg',
+    '/images/wallpaper-2.jpg',
 ];
 let currentWallpaperIndex = 0;
 
 const apps = [
    {
        name: 'Quadro Tático de Futsal',
-       src: 'quadro-tatico-futsal.webp',
+       src: './images/quadro-tatico-futsal.webp',
        action: () => window.open('https://play.google.com/store/apps/details?id=com.prancheta.quadrotaticodefutsal', '_blank')
    },
    {
        name: 'Quadro Tático de Esportes',
-       src: 'quadro-tatico-esportes.webp',
+       src: './images/quadro-tatico-esportes.webp',
        action: () => window.open('https://play.google.com/store/apps/details?id=com.prancheta.quadrotaticodeesportes', '_blank')
    },
    {
        name: 'Tabela de Futebol',
-       src: 'tabela-futebol-app.webp',
+       src: './images/tabela-futebol-app.webp',
        action: () => window.open('https://play.google.com/store/apps/details?id=com.prancheta.tabeladefutebol', '_blank')
    },
    {
        name: 'Finança Fácil',
-       src: 'financa-facil.webp',
+       src: './images/financa-facil.webp',
        action: () => window.open('https://play.google.com/store/apps/details?id=com.prancheta.financafacil', '_blank')
    },
    {
        name: 'Tabela de Futebol',
-       src: 'tabela-futebol.png',
-       action: () => window.open('https://tabeladefutebol.com.br', '_blank')
+       src: './images/tabela-futebol.png',
+       action: () => window.open('https://soccer-table.vercel.app', '_blank')
    },
    {
        name: 'ESW Livros',
-       src: 'esw-livros.png',
+       src: './images/esw-livros.png',
        action: () => window.open('https://eswlivros.vercel.app', '_blank')
    },
    {
        name: 'Mapa do Brasil Pontilhado',
-       src: 'mapa-brasil-pontilhado.png',
+       src: './images/mapa-brasil-pontilhado.png',
        action: () => window.open('https://savi8sant8s.github.io/mapa-brasil-pontilhado/', '_blank')
    },
    {
-       src: 'bbt.png',
+       src: './images/bbt.png',
        name: 'Bingo Bongo Testing',
        action: () => window.open('https://bbtesting.app', '_blank')
    },
    {
        name: 'Linkedin',
-       src: 'linkedin.png',
+       src: './images/linkedin.png',
        action: () => window.open('https://www.linkedin.com/in/savi8sant8s/', '_blank')
    },
    {
        name: 'Github',
-       src: 'github.png',
+       src: './images/github.png',
        action: () => window.open('https://www.github.com/savi8sant8s', '_blank')
    },
    {
-       name: 'Instagram',
-       src: 'instagram.webp',
-       action: () => window.open('https://www.instagram.com/savi8sant8s', '_blank')
-   },
-   {
-       name: 'Dev.to',
-       src: 'devto.png',
-       action: () => window.open('https://dev.to/savi8sant8s', '_blank')
-   },
-   {
        name: 'Rotacionar',
-       src: 'rotate.svg',
+       src: './images/rotate.svg',
        action: () => { 
            const phoneIsRotated = document.querySelector('.phone').style.transform === 'rotate(-90deg)';
            const apps = document.querySelectorAll('.app');
@@ -87,17 +77,12 @@ const apps = [
    },
     {
        name: 'Wallpaper',
-       src: 'wallpaper.svg',
+       src: './images/wallpaper.svg',
        action: () => { 
            const phoneElement = document.querySelector('.phone');
            currentWallpaperIndex = currentWallpaperIndex === wallpaper.length - 1 ? 0 : currentWallpaperIndex + 1;
            phoneElement.style.backgroundImage = `url(${wallpaper[currentWallpaperIndex]})`;
        },
-   },
-   {
-       name: 'Currículo',
-       src: 'cv.svg',
-       action: () => window.open('https://docs.google.com/document/d/1rlzxskV2tju92rVUE9pluVziFNV0cG5E/edit?usp=sharing&ouid=112146771141656157917&rtpof=true&sd=true', '_blank')
    },
 ]
 const screenElement = document.querySelector('.screen');

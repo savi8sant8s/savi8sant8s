@@ -11,13 +11,13 @@ body {
 
 .phone {
     width: 15rem;
-    height: 32.5rem;
+    height: 30rem;
     border: 0.5rem solid #232b2b;
     border-radius: 2rem;
     background: #3dcfcf;
     padding: 1rem;
     transition: 0.5s;
-    background-image: url(wallpaper.jpg);
+    background-image: url(/images/wallpaper.jpg);
     background-size: cover;
     background-position: center;
 }
