@@ -1,9 +1,3 @@
-const wallpaper = [
-    './images/wallpaper.jpg',
-    './images/wallpaper-2.jpg',
-];
-let currentWallpaperIndex = 0;
-
 const apps = [
    {
        name: 'Quadro Tático de Futsal',
@@ -41,11 +35,6 @@ const apps = [
        action: () => window.open('https://savi8sant8s.github.io/mapa-brasil-pontilhado/', '_blank')
    },
    {
-       src: './images/bbt.png',
-       name: 'Bingo Bongo Testing',
-       action: () => window.open('https://bbtesting.app', '_blank')
-   },
-   {
        name: 'Linkedin',
        src: './images/linkedin.png',
        action: () => window.open('https://www.linkedin.com/in/savi8sant8s/', '_blank')
@@ -73,15 +62,6 @@ const apps = [
            for (const app of apps) {
                app.style.transform = 'rotate(90deg)';
            }
-       },
-   },
-    {
-       name: 'Wallpaper',
-       src: './images/wallpaper.svg',
-       action: () => { 
-           const phoneElement = document.querySelector('.phone');
-           currentWallpaperIndex = currentWallpaperIndex === wallpaper.length - 1 ? 0 : currentWallpaperIndex + 1;
-           phoneElement.style.backgroundImage = `url(${wallpaper[currentWallpaperIndex]})`;
        },
    },
 ]
